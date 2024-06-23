@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css units (px,rem,em,vw,vh,%)</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            background-color: bisque;
+            height: 100vh;
+            display: flex;
+            /* max-width: 80vw; */
+            padding: 200px;
+            gap: 20px;
+
+        }
+
+        .box1 {
+            background-color: rgb(255, 131, 86);
+            height: 100%;
+            border: 2px solid black;
+            width: 50%;
+            padding: 50px;
+            overflow: auto;
+            /* border-radius: 20px; */
+            box-shadow: 5px 5px 5px rgb(170, 170, 170);
+            
+            }
+            
+            .box2 {
+                background-color: orange;
+                height: 100%;
+                border: 2px solid black;
+                width: 50%;
+                padding: 50px;
+                overflow: auto;
+                /* border-radius: 20px; */
+        
+                box-shadow: 5px 5px 5px rgb(170, 170, 170);
+        }
+        .box1:hover, .box2:hover{
+            box-shadow: 10px 10px 10px rgb(22, 22, 22);
+            cursor: pointer;
+            transform: translate(-15px, -15px);
+        }
+        @media(max-width:850px){
+            .container{
+                flex-direction: column;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .box1, .box2{
+                width: 100%;
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width:350px) {
+            .box1, .box2{
+                font-size: 1em;
+                padding: 5px;
+            }
+            .box1 h1,.box2 h1{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores est ullam in ipsa beatae maiores possimus reiciendis ex maxime voluptas, dicta culpa, explicabo libero nobis. Beatae accusamus voluptatum itaque sunt fuga quaerat dolorum culpa, laboriosam aperiam voluptas eum. Aliquid exercitationem maxime, ipsam odio minima pariatur consectetur rerum nisi unde, sint nihil cum necessitatibus voluptatum aspernatur nostrum. Dolores nam harum iste cupiditate, fugiat tempora eum suscipit, reiciendis veritatis temporibus facere libero vitae dicta aliquam necessitatibus hic impedit pariatur. Rem numquam, obcaecati atque ipsa, facilis earum aliquam ipsum, suscipit explicabo porro accusantium? Recusandae totam quidem suscipit perferendis debitis consequuntur soluta vitae ab enim alias placeat, corporis nemo iusto deserunt exercitationem aliquid deleniti. Consequuntur illo adipisci necessitatibus voluptatum quae possimus cumque rerum in consectetur ipsum accusantium delectus facere maxime nisi soluta porro tempora, provident tempore eum! Amet praesentium, velit corrupti voluptate, similique tempora tempore ipsum fuga sit rerum beatae natus, incidunt error? Sapiente similique praesentium hic et quasi, rerum ipsum maiores reprehenderit illum dolor necessitatibus at eligendi tempore expedita, alias qui voluptatum inventore optio possimus nemo nam explicabo dolorum? Vel nemo deserunt a dicta! Deleniti quae ipsam, distinctio recusandae aspernatur consectetur voluptatibus atque, non veritatis natus nam, exercitationem sunt! Consequatur porro sint nobis praesentium maxime iusto est dolor fugiat qui dicta! Cupiditate ad animi, aliquam id molestiae nihil, porro deleniti sit similique repellendus, culpa dignissimos. Dolores, provident veritatis excepturi voluptatum animi voluptas totam beatae in numquam minus nobis nulla iure eveniet aliquam eos, exercitationem maiores ullam? Officiis velit omnis ut ratione labore, incidunt magni natus. Ab obcaecati beatae, ipsa vero modi officia, voluptates quas accusamus suscipit reprehenderit optio ducimus officiis atque laboriosam fugiat delectus vitae numquam veniam voluptate, temporibus dolores adipisci nesciunt fuga. Quia ipsa iste commodi nihil quibusdam alias illum! Autem id eum sequi dolores minima sunt, voluptatum omnis assumenda nostrum facere.</p>
+        </div>
+        <div class="box2">
+            <h1>Heading-2</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, maiores illum quasi doloremque aliquid expedita error aliquam harum eius, laboriosam amet! Provident optio eum quos excepturi harum ducimus sunt omnis enim et labore nesciunt sit a pariatur, illum impedit laboriosam, debitis repellat libero, nam doloremque ipsam mollitia sed! Quas ea, molestias reiciendis nobis sit voluptas magni cumque officiis sequi fugit. Accusamus quia quo repudiandae est aperiam, enim impedit et ducimus asperiores libero? Ipsum voluptatum minus aliquam tempore sed officiis animi rem minima, architecto quo alias possimus adipisci earum atque, placeat sint iste! Enim ipsa quo neque nemo corrupti animi reiciendis dolor reprehenderit, quam minima voluptate quidem iste, atque inventore aliquid quaerat dignissimos eveniet odit a doloribus temporibus sed tempora nam itaque? Cum perspiciatis sit asperiores quas consequuntur perferendis pariatur itaque repellendus ut. Accusantium, soluta quasi? Reiciendis ad cumque omnis velit veritatis rem eaque obcaecati? Perspiciatis nostrum distinctio ad, beatae iure assumenda accusantium repellat dolor pariatur id odit recusandae architecto natus quaerat? Doloribus magnam distinctio quo tempore a, magni dignissimos error ab nostrum aspernatur sint minima facilis cum natus culpa facere saepe eos obcaecati atque corrupti quasi exercitationem soluta quam nobis! Ratione pariatur voluptatibus vel! Perferendis, et eaque praesentium doloribus asperiores, ea excepturi deleniti nulla, suscipit vero fugiat beatae nihil exercitationem. Ad nostrum cum corrupti explicabo quod eaque possimus voluptatem harum veritatis doloremque consectetur itaque quia, repellendus fugiat aperiam dolores asperiores dolorem iusto nihil quam tenetur earum architecto non sequi. Non ad animi reprehenderit, aperiam officiis, molestiae dolore qui odio consequatur ex dolores rem molestias, natus soluta commodi alias modi officia ipsam laudantium quod. Iusto mollitia nostrum eaque natus, suscipit iure nobis voluptatibus maiores perspiciatis placeat ex repellat explicabo temporibus voluptates assumenda, quisquam accusamus, quidem magnam eos ratione. At reiciendis voluptatibus quod? Neque amet nostrum laudantium. Qui deleniti repudiandae similique ratione.
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- coded by abdulwajeed-ai -->
